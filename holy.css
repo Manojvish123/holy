@@ -1,0 +1,212 @@
+*{
+    color: #000;
+}
+
+body{
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	min-height:100vh;
+	font-family: 'Poppins', sans-serif;
+background-color: #000;
+background: url("https://static.vecteezy.com/system/resources/previews/021/113/863/original/happy-holi-indian-festival-illustration-free-png.png");
+background-repeat: no-repeat;
+background-image: cover;
+background-size: contain;
+}
+div{
+	position:relative;
+	z-index:1;
+}
+
+h1{
+
+	margin:0px;
+	padding:0;
+	font-size:9em;
+	color:red;
+	filter: blur(2px);
+	margin:110px auto;
+	animation: kali 6s infinite;
+	position:relative;
+	text-shadow:0px 0px 5px 5px grayscale;
+}
+@keyframes kali{
+  0%{
+  	  filter: brightness(250%);
+  	  filter: drop-shadow(8px 8px 10px #FF1493);
+  	  top:-90px;
+  	  left:-810px;
+  	  font-family:Astigma;
+  	  transition:5s;
+  }
+
+  20%{
+
+  	  filter: grayscale(200%);
+  	  filter: drop-shadow(8px 8px 10px #FF6347);
+  	  left:-87px;
+  	  top:-65px;
+  	  font-family:sans-serif;
+  	   transition:5s;
+  }
+ 
+  30%{
+
+  	  filter:invert(25%);
+  	  filter: drop-shadow(8px 8px 10px #DB7093);
+  	  font-family:Fascinate Inline;
+  	   transition:5s;
+  	   top:-100px;
+  	  left:-80px;
+  	  color:yellow;
+  }
+  40%{
+
+  	  filter:sepia(500%); 
+  	  filter: drop-shadow(8px 8px 10px #006400);
+  	  filter: contrast(400%)brightness(150%);
+  	  font-family:screm real;
+  	   transition:5s;
+  	   color:green;
+
+  }
+  
+   50%{
+
+      filter:hue-rotate(300deg);
+      filter: drop-shadow(8px 8px 10px #483D8B);
+      font-family:areal;
+       transition:5s;
+       color:skyblue;
+
+   }
+
+   60%{
+     
+      filter: saturate(876);
+       filter: drop-shadow(8px 8px 10px green);
+  	  font-family:sans-serif;
+        transition:5s;
+        opacity:0.5;
+        color:greenyellow;
+        left:-76px;
+        top:-87px;
+        opacity:3;
+   }
+
+   70%{
+   	   filter: drop-shadow(8px 8px 10px green);
+   	   filter:contrast(55%) brightness(100%);
+  	  
+  	  font-family:sans-serif;
+   	   
+   	    transition:5s;
+   	    opacity:0.4 grey;
+   	    color:orange;
+   	    transform:translateX(-80%);
+   	    transform:rotateY(-4deg);
+   }
+    100%{
+    	 filter: contrast(400%);
+    	  filter: drop-shadow(8px 8px 10px pink);
+  	       font-family:sans-serif;
+    	   transition:5s;
+    	   color:brown;
+    	   transform:translate(87%);
+    	   right:-70px;
+    	   top:-54px;
+     
+    }
+
+}
+
+ul{
+
+	position:absolute;
+	bottom:0;
+	right:50px;
+	transform: translateX(-50%);
+}
+
+
+ul li
+{
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	list-style:none;
+	background:#000;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	filter: blur(2px);
+}
+
+ul li:nth-child(odd)
+{
+    animation: animateodd 6s linear infinite;
+}
+@keyframes animateodd{
+	0%{
+
+		transform: translate(0,0) scale(1);
+		opacity:1;
+	}
+
+	50%{
+
+		opacity:1;
+	}
+
+  100%{
+
+		transform: translate(-300px,-600px) scale(12);
+		opacity:0;
+
+	}
+}
+
+ul li:nth-child(1){
+
+	animation-delay:0s;
+	background:#ff0000;
+}
+
+ul li:nth-child(2){
+
+	animation-delay:1s;
+	background:#0000FF;
+}
+
+ul li:nth-child(3){
+
+	animation-delay:2s;
+	background:#FF00FF;
+}
+
+ul li:nth-child(4){
+
+	animation-delay:3s;
+	background:#00FFFF;
+}
+
+
+
+ul li:nth-child(5){
+
+	animation-delay:4s;
+	background:#00FF00;
+}
+
+
+
+ul li:nth-child(6){
+
+	animation-delay:5s;
+	background:#FFFF00;
+}
